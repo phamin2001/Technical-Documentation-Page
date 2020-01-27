@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="main-doc">
+      <div id="title">
+        <h2>jQuery</h2>
+      </div>
+
+      <section class="main-section" id="jQuery_Intro">
+        <div class="header">
+          <h3>jQuery Intro</h3>
+        </div>
+        <div class="desc">
+          <p>
+            jQuery is a lightweight, "write less, do more", JavaScript library.
+          </p>
+          <p>
+            The purpose of jQuery is to make it much easier to use JavaScript on
+            your website. jQuery takes a lot of common tasks that require many
+            lines of JavaScript code to accomplish, and wraps them into methods
+            that you can call with a single line of code.
+          </p>
+          <p>
+            jQuery also simplifies a lot of the complicated things from
+            JavaScript, like AJAX calls and DOM manipulation. The jQuery library
+            contains the following features:
+          </p>
+          <ul>
+            <li>HTML/DOM manipulation</li>
+            <li>CSS manipulation</li>
+            <li>HTML event methods</li>
+            <li>Effects and animations</li>
+            <li>AJAX</li>
+            <li>Utilities</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-section" id="jQuery_History">
+        <div class="header">
+          <h3>jQuery History</h3>
+        </div>
+        <div class="desc">
+          <p>
+            jQuery was originally created in January 2006 at BarCamp NYC by John
+            Resig, influenced by Dean Edwards' earlier cssQuery library. It is
+            currently maintained by a team of developers led by Timmy Willison
+            (with the jQuery selector engine, Sizzle, being led by Richard
+            Gibson).
+          </p>
+          <p>
+            jQuery was originally licensed under the CC BY-SA 2.5, and
+            relicensed to the MIT license in 2006. At the end of 2006, it was
+            dual-licensed under GPL and MIT licenses.[14] As this led to some
+            confusion, in 2012 the GPL was dropped and is now only licensed
+            under the MIT license.
+          </p>
+          <h4>Popularity</h4>
+          <ul>
+            <li>
+              In 2015, jQuery was used on 62.7% of the top 1 million websites
+              (according to BuiltWith), and 17% of all Internet websites.
+            </li>
+            <li>
+              In 2017, jQuery was used on 69.2% of the top 1 million websites
+              (according to Libscore).
+            </li>
+            <li>
+              In 2018, jQuery was used on 73% of the top 1 million websites, and
+              by 22.4% of all websites (according to BuiltWith).
+            </li>
+            <li>
+              As of May 2019, jQuery is used by 73% of the 10 million most
+              popular websites (according to W3Techs).
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-section" id="jQuery_Distribution">
+        <div class="header">
+          <h3>jQuery Distribution</h3>
+        </div>
+        <div class="desc">
+          <p>
+            The jQuery library is typically distributed as a single JavaScript
+            file that defines all its interfaces, including DOM, Events, and
+            Ajax functions. It can be included within a Web page by linking to a
+            local copy, or by linking to one of the many copies available from
+            public servers. jQuery has a content delivery network (CDN) hosted
+            by MaxCDN. Google in Google Hosted Libraries service and Microsoft
+            host the library as well.
+          </p>
+          <p>
+            Example of linking a copy of the library locally (from the same
+            server that hosts the Web page):
+          </p>
+          <pre class="code"><span></span><span
+               class="p">&lt;</span
+                ><span
+                class="nt">script</span
+                > <span class="na">src</span
+                ><span class="o">=</span
+                ><span class="s">"jquery.js"</span
+                ><span class="p">&gt;&lt;/</span
+                ><span class="nt">script</span
+                ><span class="p">&gt;</span>
+          </pre>
+          <p>
+            Example of linking a copy of the library from jQuery's public CDN:
+          </p>
+          <pre><span></span><span class="p">&lt;</span><span class="nt">script</span
+            > <span class="na">src</span><span class="o">=</span><span class="s">"https://code.jquery.com/jquery-3.4.1.min.js"</span><span class="na">
+            integrity</span><span class="o">=</span><span class="s">"sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="</span>
+            <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+          </pre>
+        </div>
+      </section>
+
+      <section class="main-section" id="jQuery_Interface">
+        <div class="header">
+          <h3>jQuery Interface</h3>
+        </div>
+        <div class="desc">
+          <h4>Functions</h4>
+          <p>
+            jQuery provides two kinds of functions, static utility functions and
+            jQuery object methods. Each has its own usage style.
+          </p>
+          <p>
+            Both are accessed through jQuery's main identifier: jQuery. This
+            identifier has an alias named. All functions can be accessed through
+            either of these two names.
+          </p>
+          <h5>jQuery methods</h5>
+          <p>
+            The jQuery function is a factory for creating a jQuery object that
+            represents one or more DOM nodes. jQuery objects have methods to
+            manipulate these nodes. These methods (sometimes called commands),
+            are chainable as each method also returns a jQuery object.
+          </p>
+          <p>
+            Access to and manipulation of multiple DOM nodes in jQuery typically
+            begins with calling the $ function with a CSS selector string. This
+            returns a jQuery object referencing all the matching elements in the
+            HTML page. $("div.test"), for example, returns a jQuery object with
+            all the div elements of class test. This node set can be manipulated
+            by calling methods on the returned jQuery object.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="jQuery_plug-ins">
+        <div class="header">
+          <h3>jQuery plug-ins</h3>
+        </div>
+        <div class="desc">
+          <p>
+            jQuery's architecture allows developers to create plug-in code to
+            extend its function. There are thousands of jQuery plug-ins
+            available on the Web that cover a range of functions, such as Ajax
+            helpers, Web services, datagrids, dynamic lists, XML and XSLT tools,
+            drag and drop, events, cookie handling, and modal windows.
+          </p>
+          <p>
+            An important source of jQuery plug-ins is the plugins sub-domain of
+            the jQuery Project website.[26] The plugins in this subdomain,
+            however, were accidentally deleted in December 2011 in an attempt to
+            rid the site of spam. The new site is a GitHub-hosted repository,
+            which required developers to resubmit their plugins and to conform
+            to new submission requirements.[28] jQuery provides a "Learning
+            Center" that can help users understand JavaScript and get started
+            developing jQuery plugins.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section" id="jQuery_Refrences">
+        <div class="header">
+          <h3>jQuery Refrences</h3>
+        </div>
+        <div class="desc">
+            <ul>
+                <li>
+                    Most the documetation in this page is take from
+                    <a href="https://en.wikipedia.org/wiki/JQuery">Wikipedia</a>
+
+                </li>
+            </ul>
+        </a>
+      </section>
+    </div>
+  </body>
+</html>
