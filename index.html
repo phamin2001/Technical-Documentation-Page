@@ -49,41 +49,60 @@
         </div>
         <div class="desc">
             <h4>DOM Traversal and Manipulation</h4>
-            <p>Get the <code>&lt;button&gt;</code> element with the class 'continue' and change its HTML to 'Next Step...'</p>
-            <div class="syntaxhighlighter javascript">
-              <table>
-                <tbody>
-                  <tr>                    
-                    <td class="code">
-                      <pre class="code"><div class="container"><div class="line"><code>$( <span class="string">"button.continue"</span> ).html( <span class="string">"Next Step..."</span> )</code></div></div></pre>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <p>Get the <code>&lt;button&gt;</code> element with the class 'continue' 
+              and change its HTML to 'Next Step...'
+            </p>
+            <pre class="code"><div class="container"
+              ><div class="line"><code>$( <span
+              class="string">"button.continue"</span
+              > ).html( <span
+              class="string">"Next Step..."</span
+              > )</code></div></div>
+            </pre>
             <h4>Event Handling</h4>
             <p>
               Show the <code>#banner-message</code> element that is hidden with
               <code>display:none</code> in its CSS when any button in <code>#button-container</code>
               is clicked.
             </p>
-            <div class="syntaxhighlighter javascript">
-              <table>
-                <tbody>
-                  <tr>                    
-                    <td class="code">
-                      <pre class="code"><div class="container"><div class="line"><code><span class="keyword">var</span> hiddenBox = $( <span class="string">"#banner-message"</span> );</code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#button-container button"</span> ).on( <span class="string">"click"</span>, <span class="keyword">function</span>( event ) {</code></div></div><div class="container"><div class="line"><code>  hiddenBox.show();</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <pre class="code"><div class="container"><div class="line"
+              ><code><span class="keyword">var</span> hiddenBox = $( <span class="string"
+              >"#banner-message"</span> );</code></div></div><div class="container"
+              ><div class="line"><code>$( <span
+              class="string">"#button-container button"</span
+              > ).on( <span class="string">"click"</span>, <span
+              class="keyword">function</span
+              >( event ) {</code></div></div><div class="container"><div class="line"><code
+              >  hiddenBox.show();</code
+              ></div></div><div class="container"><div class="line"><code
+              >});</code
+              ></div></div>
+            </pre>
             <h4>Ajax</h4>
-            <!-- <p>
-              Call a local script on the server with the query parameter zipcode=97201 and replace the element #weather-temp's html with the returned text.
-            </p> -->
-
-
+            <p>
+              Call a local script on the server <code>/api/getWeather</code> with the query 
+              parameter <code>zipcode=97201</code> and replace the element <code>#weather-temp</code>'s 
+              html with the returned text.
+            </p>
+            <pre class="code"><div class="container"><div class="line"><code>$.ajax({</code
+              ></div></div><div class="container"><div class="line"><code
+              >  url: <span class="string">"/api/getWeather"</span>,</code
+              ></div></div><div class="container"><div class="line"><code
+              >  data: {</code
+              ></div></div><div class="container"><div class="line"><code
+              >    zipcode: <span class="number">97201</span></code
+              ></div></div><div class="container"><div class="line"><code
+              >  },</code
+              ></div></div><div class="container"><div class="line"><code
+              >  success: <span class="keyword">function</span>( result ) {</code
+              ></div></div><div class="container"><div class="line"><code
+              >    $( <span class="string">"#weather-temp"</span> ).html( <span class="string">"&lt;strong&gt;"</span> + result + <span class="string">"&lt;/strong&gt; degrees"</span> );</code
+              ></div></div><div class="container"><div class="line"><code
+              >  }</code
+              ></div></div><div class="container"><div class="line"><code
+              >});</code
+              ></div></div>
+            </pre>
         </div>
 
       </section>
