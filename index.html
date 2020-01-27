@@ -8,16 +8,33 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div id="main-doc">
-      <div id="title">
-        <h2>jQuery</h2>
-      </div>
+    <nav id="nav-bar">
+      <header>jQuery</header>
+      <ul>
+        <li><a class="nav-link" href="#jQuery_Intro">jQuery Intro</a></li>
+        <li>
+          <a class="nav-link" href="#jQuery-Brief-Look">jQuery Brief Look</a>
+        </li>
+        <li><a class="nav-link" href="#jQuery_History">jQuery History</a></li>
+        <li>
+          <a class="nav-link" href="#jQuery_Distribution"
+            >jQuery Distribution</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#jQuery_Interface">jQuery Interface</a>
+        </li>
+        <li><a class="nav-link" href="#jQuery_plug-ins">jQuery Plug ins</a></li>
+        <li>
+          <a class="nav-link" href="#jQuery_Refrences">jQuery Refrences</a>
+        </li>
+      </ul>
+    </nav>
 
+    <main id="main-doc">
       <section class="main-section" id="jQuery_Intro">
-        <div class="header">
-          <h3>jQuery Intro</h3>
-        </div>
-        <div class="desc">
+        <header>jQuery Intro</header>
+        <article>
           <p>
             jQuery is a lightweight, "write less, do more", JavaScript library.
           </p>
@@ -40,32 +57,32 @@
             <li>AJAX</li>
             <li>Utilities</li>
           </ul>
-        </div>
+        </article>
       </section>
 
       <section class="main-section" id="jQuery-Brief-Look">
-        <div class="header">
-            <h3>jQuery Brief-Look</h3>
-        </div>
-        <div class="desc">
-            <h4>DOM Traversal and Manipulation</h4>
-            <p>Get the <code>&lt;button&gt;</code> element with the class 'continue' 
-              and change its HTML to 'Next Step...'
-            </p>
-            <pre class="code"><div class="container"
+        <header>jQuery Brief-Look</header>
+        <article>
+          <h4>DOM Traversal and Manipulation</h4>
+          <p>
+            Get the <code>&lt;button&gt;</code> element with the class
+            'continue' and change its HTML to 'Next Step...'
+          </p>
+          <pre class="code"><div class="container"
               ><div class="line"><code>$( <span
               class="string">"button.continue"</span
               > ).html( <span
               class="string">"Next Step..."</span
               > )</code></div></div>
             </pre>
-            <h4>Event Handling</h4>
-            <p>
-              Show the <code>#banner-message</code> element that is hidden with
-              <code>display:none</code> in its CSS when any button in <code>#button-container</code>
-              is clicked.
-            </p>
-            <pre class="code"><div class="container"><div class="line"
+          <h4>Event Handling</h4>
+          <p>
+            Show the <code>#banner-message</code> element that is hidden with
+            <code>display:none</code> in its CSS when any button in
+            <code>#button-container</code>
+            is clicked.
+          </p>
+          <pre class="code"><div class="container"><div class="line"
               ><code><span class="keyword">var</span> hiddenBox = $( <span class="string"
               >"#banner-message"</span> );</code></div></div><div class="container"
               ><div class="line"><code>$( <span
@@ -78,13 +95,15 @@
               >});</code
               ></div></div>
             </pre>
-            <h4>Ajax</h4>
-            <p>
-              Call a local script on the server <code>/api/getWeather</code> with the query 
-              parameter <code>zipcode=97201</code> and replace the element <code>#weather-temp</code>'s 
-              html with the returned text.
-            </p>
-            <pre class="code"><div class="container"><div class="line"><code>$.ajax({</code
+          <h4>Ajax</h4>
+          <p>
+            Call a local script on the server <code>/api/getWeather</code> with
+            the query parameter <code>zipcode=97201</code> and replace the
+            element <code>#weather-temp</code>'s html with the returned text.
+          </p>
+          <pre
+            class="code"
+          ><div class="container"><div class="line"><code>$.ajax({</code
               ></div></div><div class="container"><div class="line"><code
               >  url: <span class="string">"/api/getWeather"</span>,</code
               ></div></div><div class="container"><div class="line"><code
@@ -103,15 +122,12 @@
               >});</code
               ></div></div>
             </pre>
-        </div>
-
+        </article>
       </section>
 
       <section class="main-section" id="jQuery_History">
-        <div class="header">
-          <h3>jQuery History</h3>
-        </div>
-        <div class="desc">
+        <header>jQuery History</header>
+        <article>
           <p>
             jQuery was originally created in January 2006 at BarCamp NYC by John
             Resig, influenced by Dean Edwards' earlier cssQuery library. It is
@@ -145,14 +161,12 @@
               popular websites (according to W3Techs).
             </li>
           </ul>
-        </div>
+        </article>
       </section>
 
       <section class="main-section" id="jQuery_Distribution">
-        <div class="header">
-          <h3>jQuery Distribution</h3>
-        </div>
-        <div class="desc">
+        <header>jQuery Distribution</header>
+        <article>
           <p>
             The jQuery library is typically distributed as a single JavaScript
             file that defines all its interfaces, including DOM, Events, and
@@ -185,14 +199,12 @@
             integrity</span><span class="o">=</span><span class="s">"sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="</span>
             <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
           </pre>
-        </div>
+        </article>
       </section>
 
       <section class="main-section" id="jQuery_Interface">
-        <div class="header">
-          <h3>jQuery Interface</h3>
-        </div>
-        <div class="desc">
+        <header>jQuery Interface</header>
+        <article>
           <h4>Functions</h4>
           <p>
             jQuery provides two kinds of functions, static utility functions and
@@ -218,14 +230,12 @@
             all the div elements of class test. This node set can be manipulated
             by calling methods on the returned jQuery object.
           </p>
-        </div>
+        </article>
       </section>
 
       <section class="main-section" id="jQuery_plug-ins">
-        <div class="header">
-          <h3>jQuery plug-ins</h3>
-        </div>
-        <div class="desc">
+        <header>jQuery plug-ins</header>
+        <article>
           <p>
             jQuery's architecture allows developers to create plug-in code to
             extend its function. There are thousands of jQuery plug-ins
@@ -243,23 +253,22 @@
             Center" that can help users understand JavaScript and get started
             developing jQuery plugins.
           </p>
-        </div>
+        </article>
       </section>
 
       <section class="main-section" id="jQuery_Refrences">
-        <div class="header">
-          <h3>jQuery Refrences</h3>
-        </div>
-        <div class="desc">
-            <ul>
-                <li>
-                    Most the documetation in this page is take from
-                    <a href="https://en.wikipedia.org/wiki/JQuery">Wikipedia</a>
-
-                </li>
-            </ul>
-        </a>
+        <header>jQuery Refrences</header>
+        <article>
+          <ul>
+            <li>
+              Most the documetation in this page is take from
+              <a href="https://en.wikipedia.org/wiki/JQuery">Wikipedia</a>
+              and
+              <a href="https://jquery.com/">jQuery</a>
+            </li>
+          </ul>
+        </article>
       </section>
-    </div>
+    </main>
   </body>
 </html>
