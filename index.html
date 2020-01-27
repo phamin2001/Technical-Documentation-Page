@@ -43,6 +43,51 @@
         </div>
       </section>
 
+      <section class="main-section" id="jQuery-Brief-Look">
+        <div class="header">
+            <h3>jQuery Brief-Look</h3>
+        </div>
+        <div class="desc">
+            <h4>DOM Traversal and Manipulation</h4>
+            <p>Get the <code>&lt;button&gt;</code> element with the class 'continue' and change its HTML to 'Next Step...'</p>
+            <div class="syntaxhighlighter javascript">
+              <table>
+                <tbody>
+                  <tr>                    
+                    <td class="code">
+                      <pre class="code"><div class="container"><div class="line"><code>$( <span class="string">"button.continue"</span> ).html( <span class="string">"Next Step..."</span> )</code></div></div></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4>Event Handling</h4>
+            <p>
+              Show the <code>#banner-message</code> element that is hidden with
+              <code>display:none</code> in its CSS when any button in <code>#button-container</code>
+              is clicked.
+            </p>
+            <div class="syntaxhighlighter javascript">
+              <table>
+                <tbody>
+                  <tr>                    
+                    <td class="code">
+                      <pre class="code"><div class="container"><div class="line"><code><span class="keyword">var</span> hiddenBox = $( <span class="string">"#banner-message"</span> );</code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#button-container button"</span> ).on( <span class="string">"click"</span>, <span class="keyword">function</span>( event ) {</code></div></div><div class="container"><div class="line"><code>  hiddenBox.show();</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4>Ajax</h4>
+            <!-- <p>
+              Call a local script on the server with the query parameter zipcode=97201 and replace the element #weather-temp's html with the returned text.
+            </p> -->
+
+
+        </div>
+
+      </section>
+
       <section class="main-section" id="jQuery_History">
         <div class="header">
           <h3>jQuery History</h3>
